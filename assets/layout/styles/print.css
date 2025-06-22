@@ -1,0 +1,62 @@
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  div.invoice-parent, div.invoice-parent * {
+    visibility: visible;
+  }
+  div.invoice-parent {
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+ }
+
+body {     font-family: "Trebuchet MS","Helvetica","Arial","Verdana","sans-serif"; }
+ div.invoice-parent { width: 80%; margin: 0 auto; }
+ div.logo-container { width: 63%; margin: 0 auto; }
+ div.left-address { float: left; font-size: 15px;}
+ div.right-address { float: right; font-size: 15px;}
+ div#to_addresses { margin-left:30px; }
+ div#replacement_period { font-weight:bold; margin: 10px 0 10px 0; text-align: center; }
+ div#bill_type { font-size: 15px; font-weight: bold; margin: 20px; text-align: center; }
+ div#tandc { float: left; font-size: 12px; margin-top: 10px; width: 500px; }
+ div#aura-signature { margin-top:30px; float:right; }
+ hr { color: #4B78BB; margin: 20px 0;}
+ h1 { font-size: 35px; }
+ .float-left { float: left; }
+ .float-right { float: right; }
+ div#tin_cst_dll {     left: 50%;
+    text-align: center;
+    top: 50%; }
+ span#id-center { margin:0 auto }
+ table.invoice-related { border-collapse: collapse; font-size: 13px;}
+ table.invoice-related td, table.invoice-related th {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+table.invoice-related tr.item-calc {
+  height: 32px;
+  border-left: 1px solid #fff;
+}
+table.invoice-related td.blank {
+    border: 0 none;
+}
+table.invoice-related td.blank-value {
+    border-left: 0 none;
+}
+table.invoice-related td.blank-bottom {
+    border-bottom: 1px solid #FFFFFF;
+}
+ table.invoice-related td.total-line {
+    border-right: 0 none;
+    text-align: right;
+}
+textarea { border: 0; overflow: hidden; resize: none; }
+input.qty { border: 0 none; width: 40px; }
+
+textarea:hover, textarea:focus, #items td.total-value textarea:hover, #items td.total-value textarea:focus, .delete:hover { background-color:#EEFF88; }
+input.qty:hover, input.qty:focus { border: 0 none; overflow: hidden; resize: none; background-color: #EEFF88;}
+
+.delete-wpr { position: relative; }
+.delete { display: block; color: #000; text-decoration: none; position: absolute; background: #EEEEEE; font-weight: bold; padding: 0px 3px; border: 1px solid; top: -6px; left: -22px; font-family: Verdana; font-size: 12px; 
